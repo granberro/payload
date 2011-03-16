@@ -18,7 +18,7 @@ PLSRC = payload_groove_hermes.S
 PLOBJ = $(PLSRC:%.S=$(PLOBJDIR)/%.o) 
 PLBIN = $(PLOBJ:%.o=$(PLOBJDIR)/%.bin)
 
-all: deps payloads
+all: deps payloads copy
 
 deps:
 	@mkdir -p .depp
